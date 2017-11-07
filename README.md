@@ -20,5 +20,5 @@ npm install --save badgeit
 ```javascript
 const badgeit = require('badgeit');
 
-const badge = await badgetit({ text: ['Hello', 'World'] });
+const badge = await badgeit({ text: ['Hello', 'World'] });
 ```
