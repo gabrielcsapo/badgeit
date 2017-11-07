@@ -1,0 +1,40 @@
+{
+  "name": "badgeit",
+  "version": "0.0.1",
+  "description": "🎫 put a badge on it",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "tape test",
+    "build": "browserify -r ./index.js:badgeit -t [ brfs ] -t [ babelify --presets [ env ]]  > dist/badgeit.js && minify dist/badgeit.js --out-file dist/badgeit.min.js",
+    "coverage": "tap test --coverage --coverage-report=lcov",
+    "generate-docs": "tryitout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcsapo/badgeit.git"
+  },
+  "author": "Gabriel J. Csapo <gabecsapo@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gabrielcsapo/badgeit/issues"
+  },
+  "homepage": "https://github.com/gabrielcsapo/badgeit#readme",
+  "dependencies": {
+    "opentype.js": "^0.7.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-minify": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "brfs": "^1.4.3",
+    "browserify": "^14.5.0",
+    "eslint": "^4.10.0",
+    "lodash.defaultsdeep": "^4.6.0",
+    "tape": "^4.8.0",
+    "tryitout": "^1.0.2",
+    "uglifyjs": "^2.4.11"
+  }
+}
