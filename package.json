@@ -1,6 +1,6 @@
 {
   "name": "badgeit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "🎫 put a badge on it",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/gabrielcsapo/badgeit#readme",
   "dependencies": {
-    "opentype.js": "^0.7.3"
+    "opentype.js": "^0.7.3",
+    "lodash.defaultsdeep": "^4.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -32,7 +33,6 @@
     "brfs": "^1.4.3",
     "browserify": "^14.5.0",
     "eslint": "^4.10.0",
-    "lodash.defaultsdeep": "^4.6.0",
     "tap": "^10.7.2",
     "tape": "^4.8.0",
     "tryitout": "^1.0.2",

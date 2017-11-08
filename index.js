@@ -1,7 +1,7 @@
 const fs = require('fs');
 const opentype = require('opentype.js');
 const defaults = require('lodash.defaultsdeep');
-const defaultFont = fs.readFileSync('fonts/OpenSans-Bold.ttf');
+const defaultFont = fs.readFileSync(__dirname + '/fonts/OpenSans-Bold.ttf');
 
 function text(message, options) {
 	const { font, offsetX, paddingX, paddingY, fontSize } = options;
