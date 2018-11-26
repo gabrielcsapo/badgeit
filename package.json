@@ -1,12 +1,12 @@
 {
   "name": "badgeit",
-  "version": "0.0.2",
-  "description": "🎫 put a badge on it",
+  "version": "0.1.0",
+  "description": "🎫 if you like it, put a badge on it",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "standard",
     "test": "tape test",
-    "build": "browserify -r ./index.js:badgeit -t [ brfs ] -t [ babelify --presets [ env ]]  > dist/badgeit.js && minify dist/badgeit.js --out-file dist/badgeit.min.js",
+    "build": "browserify -r ./index.js:badgeit -t [ brfs ] -t [ babelify --presets [ @babel/preset-env ]]  > dist/badgeit.js && minify dist/badgeit.js --out-file dist/badgeit.min.js",
     "coverage": "tap test --coverage --coverage-report=lcov",
     "generate-docs": "tryitout"
   },
@@ -20,22 +20,32 @@
     "url": "https://github.com/gabrielcsapo/badgeit/issues"
   },
   "homepage": "https://github.com/gabrielcsapo/badgeit#readme",
+  "standard": {
+    "ignore": [
+      "docs/**",
+      "dist/**"
+    ]
+  },
+  "files": [
+    "index.js",
+    "dist/**"
+  ],
   "dependencies": {
-    "opentype.js": "^0.7.3",
-    "lodash.defaultsdeep": "^4.6.0"
+    "lodash.defaultsdeep": "^4.6.0",
+    "opentype.js": "^0.11.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-minify": "^0.2.0",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
-    "brfs": "^1.4.3",
-    "browserify": "^15.1.0",
-    "eslint": "^4.15.0",
-    "tap": "^11.0.1",
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-minify": "^0.5.0",
+    "babelify": "^10.0.0",
+    "brfs": "^2.0.1",
+    "browserify": "^16.2.3",
+    "standard": "^12.0.1",
+    "tap": "^12.1.0",
     "tape": "^4.8.0",
-    "tryitout": "^2.0.7",
+    "tryitout": "^2.1.1",
     "uglifyjs": "^2.4.11"
   }
 }

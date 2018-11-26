@@ -1,6 +1,6 @@
 # badgeit
 
-> 🎫 put a badge on it
+> 🎫 if you like it, put a badge on it
 
 [![Build Status](https://travis-ci.org/gabrielcsapo/badgeit.svg?branch=master)](https://travis-ci.org/gabrielcsapo/badgeit)
 [![Dependency Status](https://starbuck.gabrielcsapo.com/badge/github/gabrielcsapo/badgeit/status.svg)](https://starbuck.gabrielcsapo.com/github/gabrielcsapo/badgeit)
