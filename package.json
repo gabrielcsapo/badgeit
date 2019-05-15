@@ -1,6 +1,6 @@
 {
   "name": "badgeit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🎫 if you like it, put a badge on it",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
   },
   "files": [
     "index.js",
+    "fonts/**",
     "dist/**"
   ],
   "dependencies": {

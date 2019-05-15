@@ -1,3 +1,7 @@
+# 0.1.1 (05/14/2019)
+
+- adds npm path to publish fonts folder
+
 # 0.1.0 (11/26/2018)
 
 - updates `babel-core` -> `@babel/core`
